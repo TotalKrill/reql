@@ -1,0 +1,53 @@
+Version 0.4.0 (2018-08-05)
+==========================
+
+* Raise *minimum rustc version* to `1.25.0`.
+* Update `ring` to version `0.13`.
+
+Version 0.3.0 (2018-05-23)
+==========================
+
+* Raise *minimum rustc version* to `1.22.0`.
+* Update `rand` to version `0.5`.
+* Refactor code to use new language features available with `1.22.0`.
+
+Version 0.2.4 (2018-05-02)
+==========================
+
+* Downgrade `ring` to version `0.12.1` as per recommendation from its author.
+
+Version 0.2.3 (2018-01-09)
+==========================
+
+* Update `ring` to version `0.13.0-alpha` since previous versions fail to build.
+* Update `rand` and `base64` to their latest version.
+
+Version 0.2.1 (2017-07-19)
+==========================
+Update `ring` to version `0.11` and `base64` to `0.6`.
+
+Version 0.2.0 (2017-05-10)
+==========================
+
+* *New feature:* A SCRAM server implementation contributed by dyule. Thanks!
+* Rename `client::ClientFirst` to `client::ScramClient`. The former is deprecated, but keeps working
+  in the v0.2 series.
+* Reexport `ScramClient`, `ScramServer` and other often used structs at crate root.
+* Update `ring` to version `0.9.4`.
+* Replace dependency on `data_encoding` by the `base64` crate.
+
+Version 0.1.1 (2017-01-30)
+==========================
+Update `ring` to version `0.6`.
+
+Version 0.1.0 (2016-08-24)
+==========================
+Version numbers like `0.0.x` are non-compatible, using `0.1.0` allows to push minior updates.
+
+Version 0.0.2 (2016-08-24)
+==========================
+Update `ring` to version `0.3.0`.
+
+Version 0.0.1 (2016-08-20)
+==========================
+First release providing a SCRAM-SHA-256 client implementation without support for channel-binding.
